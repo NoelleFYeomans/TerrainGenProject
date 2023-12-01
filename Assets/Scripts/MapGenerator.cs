@@ -11,6 +11,12 @@ public class MapGenerator : MonoBehaviour
         ColourMap,
         Mesh
     }
+
+    private void Start()
+    {
+        GenerateMap();
+    }
+
     public DrawMode drawMode;
 
     const int mapChunkSize = 241;
