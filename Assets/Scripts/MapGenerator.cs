@@ -25,6 +25,9 @@ public class MapGenerator : MonoBehaviour
     public int seed;
     public Vector2 offset;
 
+    public float meshHeightMultiplier;
+    public AnimationCurve meshHeightCurve;
+
     public bool automaticUpdate;
 
     public TerrainType[] reigons;
@@ -63,7 +66,7 @@ public class MapGenerator : MonoBehaviour
         }
         else if (drawMode == DrawMode.Mesh)
         {
-            display.DrawMesh(MeshGen.GenerateTerrainMesh(noiseMap), TexGen.TextureFromColourMap(mapColour, mapWidth, mapHeight));
+            display.DrawMesh(MeshGen.GenerateTerrainMesh(noiseMap, meshHeightMultiplier, meshHeightCurve), TexGen.TextureFromColourMap(mapColour, mapWidth, mapHeight));
         }
     }
 
