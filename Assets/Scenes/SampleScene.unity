@@ -330,15 +330,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96c5bc50cb66db04e81ed5cf65312726, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  drawMode: 1
   mapWidth: 100
   mapHeight: 100
   noiseScale: 20
   octaves: 4
-  persistance: 0.5
+  persistance: 0.35
   lacunarity: 2
   seed: 69
   offset: {x: 0, y: 0}
   automaticUpdate: 1
+  reigons:
+  - name: DeepWater
+    height: 0.3
+    colour: {r: 0.33367068, g: 0.29073212, b: 0.9433962, a: 0}
+  - name: Water
+    height: 0.4
+    colour: {r: 0.37964284, g: 0.3406906, b: 0.9339623, a: 0}
+  - name: Sand
+    height: 0.45
+    colour: {r: 0.91138804, g: 0.9811321, b: 0.4597128, a: 0}
+  - name: Grass
+    height: 0.55
+    colour: {r: 0.35918725, g: 0.8679245, b: 0.21834572, a: 0}
+  - name: DarkGrass
+    height: 0.6
+    colour: {r: 0.17907587, g: 0.6698113, b: 0.042126425, a: 0}
+  - name: Rock
+    height: 0.7
+    colour: {r: 0.4811321, g: 0.3464756, b: 0.21181914, a: 0}
+  - name: DarkRock
+    height: 0.9
+    colour: {r: 0.3490566, g: 0.23819272, b: 0.12732881, a: 0}
+  - name: Snow
+    height: 1
+    colour: {r: 1, g: 1, b: 1, a: 0}
 --- !u!4 &908549401
 Transform:
   m_ObjectHideFlags: 0
