@@ -33,7 +33,6 @@ public static class MeshGen
                 vertexIndex++; //keeps track of where we are in 1D array
             }
         }
-
         return meshData;
     }
 }
